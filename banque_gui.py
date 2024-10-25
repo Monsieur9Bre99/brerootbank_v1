@@ -11,7 +11,7 @@ class BanqueGUI:
         self.root = root
         self.root.title("brerootBank - Gestionnaire de Banque Simplifié")
         self.root.geometry("600x400")
-        self.root.configure(bg="#a4dff4")  # Couleur de fond
+        self.root.configure(bg="#ceeced")  # Couleur de fond
         self.comptes = {}  # Dictionnaire pour stocker les comptes par nom de titulaire
 
         # Charger les comptes depuis le fichier JSON
