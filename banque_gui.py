@@ -13,6 +13,8 @@ class BanqueGUI:
         self.root.geometry("600x400")
         self.root.configure(bg="#ceeced")  # Couleur de fond
         self.comptes = {}  # Dictionnaire pour stocker les comptes par nom de titulaire
+                # Texte de bienvenue
+
 
         # Charger les comptes depuis le fichier JSON
         self.charger_comptes()
