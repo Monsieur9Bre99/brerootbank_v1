@@ -1,0 +1,79 @@
+Projet Final: Gestionnaire de Banque Simplifié
+
+Objectif : Créer une application Python qui simule un gestionnaire de comptes bancaires. L'utilisateur peut consulter le solde de son compte, déposer de l'argent, retirer de l'argent, et afficher l'historique des transactions.
+
+I- Fonctionnalités du projet :
+
+1- Création d'un compte :
+Demander à l'utilisateur de saisir son nom et de créer un compte avec un solde initial.
+
+2- Consultation du solde :
+L'utilisateur peut consulter le solde de son compte à tout moment.
+
+3- Dépôt d'argent :
+L'utilisateur peut déposer de l'argent sur son compte. Le montant est ajouté au solde.
+
+4- Retrait d'argent :
+L'utilisateur peut retirer de l'argent, à condition que le montant soit disponible sur son compte (le solde ne peut pas devenir négatif).
+
+5- Historique des transactions :
+Chaque dépôt ou retrait doit être enregistré dans l'historique des transactions, et l'utilisateur peut afficher cet historique.
+
+6- Menu d'options :
+L'utilisateur peut naviguer dans un menu avec différentes options (Consulter le solde, Déposer de l'argent, Retirer de l'argent, Afficher l'historique, Quitter).
+
+7- Ajout d’intérêts mensuels :
+Chaque mois, un taux d’intérêt est appliqué au solde du compte. Par exemple, un taux d’intérêt de 1% est ajouté au solde chaque mois.
+Le taux d’intérêt peut être défini lors de la création du compte.
+
+8- Possibilité de créer plusieurs comptes :
+L’utilisateur peut créer plusieurs comptes bancaires (par exemple, un compte épargne et un compte courant).
+L’utilisateur peut consulter, déposer, retirer, ou transférer de l’argent entre les différents comptes.
+
+9- Transfert d’argent entre comptes :
+L’utilisateur peut transférer de l’argent entre ses différents comptes (par exemple, transférer de l'argent d'un compte courant vers un compte épargne).
+
+10- Affichage des détails des comptes :
+L’utilisateur peut afficher une liste de tous ses comptes avec les soldes actuels et les taux d’intérêt associés.
+
+11- Ajout d’un code PIN pour chaque compte :
+Lors de la création de chaque compte, un code PIN est défini. Ce code PIN doit être saisi pour accéder au compte.
+
+II- Pseudo-code
+
+Fonction de création du compte :
+Demander le nom de l'utilisateur.
+Initialiser un solde à 0.
+Fonction pour consulter le solde :
+Afficher le solde actuel du compte.
+Fonction pour déposer de l'argent :
+Demander à l'utilisateur combien il souhaite déposer.
+Ajouter ce montant au solde.
+Fonction pour retirer de l'argent :
+Demander à l'utilisateur combien il souhaite retirer.
+Vérifier que le solde est suffisant.
+Retirer le montant du solde.
+Fonction pour afficher l'historique des transactions :
+Afficher la liste des dépôts et retraits effectués.
+
+- Boucle principale :
+
+Afficher un menu d'options (1. Consulter le solde, 2. Déposer, 3. Retirer, 4. Historique, 5. Quitter).
+Répéter l'action choisie jusqu'à ce que l'utilisateur décide de quitter.
+Création de plusieurs comptes :
+Lors de la création, chaque compte a un nom unique, un solde initial, un taux d’intérêt et un code PIN.
+Application des intérêts mensuels :
+À chaque début de mois, un intérêt est calculé et ajouté au solde du compte.
+Transfert d’argent entre comptes :
+L’utilisateur peut sélectionner un compte source et un compte cible pour transférer de l’argent.
+Vérifier que le compte source a un solde suffisant.
+Affichage des détails de chaque compte :
+Afficher le solde, le taux d’intérêt et la date de la dernière application des intérêts.
+Sécurité avec code PIN :
+Lors de l’accès à un compte, l’utilisateur doit entrer le code PIN correspondant pour effectuer des actions.
+
+Bonus : 
+
+- Ajout de l'interface graphique (par exemple avec python tkinter)
+  Nom de la banque : brerootBank
+  Interface color : (#115e8e = rgb(17, 94, 142); blanc = #f1f1f1 et Noir = #333 ou autre)
